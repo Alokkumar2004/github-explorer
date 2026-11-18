@@ -20,6 +20,6 @@ export function Sidebar({ mobileOpen, onNavigate, favoriteCount }: Props) {
     <div className="sidebar-caption discover-caption">DISCOVER</div>
     <button className="sidebar-link" onClick={() => { document.getElementById('trending')?.scrollIntoView({ behavior: 'smooth' }); onNavigate(); }}><Activity size={17}/><span>Trending repositories</span></button>
     <button className="sidebar-link" onClick={() => { document.getElementById('analytics')?.scrollIntoView({ behavior: 'smooth' }); onNavigate(); }}><BarChart3 size={17}/><span>Analytics</span></button>
-    <div className="sidebar-bottom"><div className="rocket-card"><div className="rocket-card-glow"/><img src="/Rocket.png" alt="Neon rocket launching"/><div className="rocket-content"><Terminal size={14}/><b>Build. Explore.<br/>Grow.</b><span>Every commit moves you forward.</span></div></div><div className="sidebar-footer"><span className="status-led"/> GitHub REST API <span className="version-label">v1.0</span></div></div>
+    <div className="sidebar-bottom"><div className="rocket-card"><div className="rocket-card-glow"/><img src="src={import.meta.env.BASE_URL + 'Rocket.png'}" alt="Neon rocket launching"/><div className="rocket-content"><Terminal size={14}/><b>Build. Explore.<br/>Grow.</b><span>Every commit moves you forward.</span></div></div><div className="sidebar-footer"><span className="status-led"/> GitHub REST API <span className="version-label">v1.0</span></div></div>
   </aside>;
 }
