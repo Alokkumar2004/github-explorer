@@ -1,0 +1,38 @@
+.heroCard {
+  position: relative;
+  border-radius: 1.5rem;
+  background: linear-gradient(90deg, rgba(5, 11, 31, 0.9), rgba(3, 8, 23, 1), rgba(5, 11, 31, 0.9));
+  border: 1px solid rgba(0, 168, 255, 0.3);
+  padding: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.mascotImg {
+  width: 100%;
+  max-width: 26rem;
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(0, 168, 255, 0.5));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.statCard {
+  background: rgba(3, 8, 23, 0.8);
+  border: 1px solid rgba(0, 168, 255, 0.25);
+  backdrop-filter: blur(16px);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  border-color: rgba(0, 212, 255, 0.6);
+  box-shadow: 0 0 25px rgba(0, 168, 255, 0.2);
+}
